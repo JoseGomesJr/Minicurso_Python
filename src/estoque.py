@@ -90,7 +90,7 @@ class Estoque():
             prateleira[produto].nome(nome)
         elif tipo ==2:
             marca = input("Nova marca do produto: ")
-            prateleira[produto].marca(marca)
+            prateleira[produto].addmarca(marca)
         elif tipo==3:
             preco = cls.quantidade("Preco do produto: ")
             prateleira[produto].preco(preco)
@@ -114,7 +114,8 @@ class Estoque():
         if choice == 1:
             PrintInfo.printestoque(cls.estoques.values())
         elif choice == 2:
-            PrintInfo.print_marca(cls.estoques.values())
+            mensagem= input("Marca que deseja pesquisa: ")
+            PrintInfo.print_marca(cls.estoques.values(), mensagem)
         elif choice == 3:
             PrintInfo.print_data(cls.estoques.values())
         elif choice ==4:

@@ -25,10 +25,10 @@ class Produtos(ABC):
             print("Valor invalido")
             return False
         self._preco = preco
-    @property 
+    
     def marca(self):
         return self._marca
-    def marca(self, marca):
+    def addmarca(self, marca):
         self._marca= marca
 
     @property 

@@ -10,7 +10,7 @@ class Higiene(Produtos):
     def volume(self):
         return self._volume
     def addvolume(self, volume, unidade):
-        if volume <= 0 and unidade != "ml" or unidade != 'g':
+        if volume <= 0 and (unidade != "ml" or unidade != 'g'):
             print("Valor invalido ou unidade invalidos")
             return False
         self._volume= volume
@@ -18,7 +18,7 @@ class Higiene(Produtos):
         return True
     @property
     def print(self):
-        print("volume\peso do produto: ", str(self._volume))
+        print("volume\peso do produto: "+ str(self._volume)+" "+ self._unidade)
     
     def tipo_produto(self):
         return "Higiene"

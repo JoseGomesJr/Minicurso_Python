@@ -6,7 +6,7 @@ class Menu:
     def tipos_de_produto(cls, nome_, marca, data_venc):
         print("Informe o tipo de produto que vai ser adicionado:\n1-Alimento\n2- Bebidas\n3- Higiene\n")
         choice=''
-        choice = PrintMenu.validChoice(choice, 3, "Informe a opção")
+        choice = PrintMenu.validChoice(choice, 3, "Informe a opção: ")
         if choice == 1:
             Estoque.add_alimento(nome_, marca, data_venc)
         elif choice == 2:
