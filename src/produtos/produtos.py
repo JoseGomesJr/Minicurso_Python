@@ -56,6 +56,8 @@ class Produtos(ABC):
     def print_basicos(self):
         print("nome: "+ self._nome)
         print("marca: "+ str(self._marca))
+        print("preço: ", str(self._preco))
+        print("data de validade: ", str(self._data_venc))
         print("quantidade: "+ str(self._quantidade))
     
     @abstractmethod
