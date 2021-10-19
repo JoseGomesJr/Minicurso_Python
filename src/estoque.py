@@ -86,7 +86,7 @@ class Estoque():
         prateleira= list(cls.estoques.values())
         produto= int(cls.search())
         if tipo == 1:
-            nome = input("Novo nome do empregado: ")
+            nome = input("Novo nome do produto: ")
             prateleira[produto].nome(nome)
         elif tipo ==2:
             marca = input("Nova marca do produto: ")

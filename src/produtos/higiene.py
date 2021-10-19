@@ -6,7 +6,7 @@ class Higiene(Produtos):
         self._volume= volume
         self._unidade= ""
     
-    @property 
+    
     def volume(self):
         return self._volume
     def addvolume(self, volume, unidade):
@@ -16,13 +16,13 @@ class Higiene(Produtos):
         self._volume= volume
         self._unidade= unidade
         return True
-    @property
+    
     def print(self):
         print("volume\peso do produto: "+ str(self._volume)+" "+ self._unidade)
     
     def tipo_produto(self):
         return "Higiene"
     def __str__(self):
-        self.print_basicos
-        self.print
+        self.print_basicos()
+        self.print()
         return '\n'

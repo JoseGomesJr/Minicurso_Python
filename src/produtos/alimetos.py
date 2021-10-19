@@ -5,7 +5,7 @@ class Alimentos(Produtos):
         super().__init__(nome, marca, data_venc, quantidade, preco)
         self._peso= peso
     
-    @property 
+    
     def peso(self):
         return self._peso
     
@@ -15,14 +15,14 @@ class Alimentos(Produtos):
             return False
         self._peso= peso
         return True
-    @property
+    
     def print(self):
         print("peso: ", str(self._peso))
     
     def tipo_produto(self):
         return "Alimento"
     def __str__(self):
-        self.print_basicos
-        self.print
+        self.print_basicos()
+        self.print()
         return '\n'
     

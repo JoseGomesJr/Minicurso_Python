@@ -10,13 +10,13 @@ class Produtos(ABC):
         self._data= datetime.now()
         self._preco = preco
     
-    @property
+    
     def nome(self):
         return self._nome
     
     def nome(self, nome):
         self._nome= nome
-    @property 
+     
     def preco(self):
         return self._preco
 
@@ -31,7 +31,7 @@ class Produtos(ABC):
     def addmarca(self, marca):
         self._marca= marca
 
-    @property 
+    
     def quantitade(self):
         return self._quantidade
 
@@ -52,7 +52,6 @@ class Produtos(ABC):
     def data_now(self):
         return self._data
 
-    @property
     def print_basicos(self):
         print("nome: "+ self._nome)
         print("marca: "+ str(self._marca))

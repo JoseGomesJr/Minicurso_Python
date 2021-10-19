@@ -5,7 +5,7 @@ class Bebidas(Produtos):
         super().__init__(nome, marca, data_venc, quantidade, preco)
         self._volume= volume
     
-    @property 
+   
     def volume(self):
         return self._volume
     def addpeso_volume(self, volume):
@@ -15,13 +15,13 @@ class Bebidas(Produtos):
         self._volume= volume
         return True
 
-    @property
+    
     def print(self):
         print("volume: ", str(self._volume))
     
     def tipo_produto(self):
         return "Bebida"
     def __str__(self):
-        self.print_basicos
-        self.print
+        self.print_basicos()
+        self.print()
         return '\n'
